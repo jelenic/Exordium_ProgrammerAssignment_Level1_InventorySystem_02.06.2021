@@ -34,7 +34,7 @@ public class PlayerInventory : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("trigger on:" + collision.ToString());
+        //Debug.Log("trigger on:" + collision.ToString());
         Interactable interactable = collision.GetComponent<Interactable>();
         if (collision.tag == "Interactable")
         {
@@ -44,7 +44,7 @@ public class PlayerInventory : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("trigger off:" + collision.ToString());
+        //Debug.Log("trigger off:" + collision.ToString());
         Interactable interactable = collision.GetComponent<Interactable>();
         if (collision.tag == "Interactable")
         {
