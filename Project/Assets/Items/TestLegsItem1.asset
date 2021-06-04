@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ab69d50daa85054f9d20e0b0776756f, type: 3}
+  m_Name: TestLegsItem1
+  m_EditorClassIdentifier: 
+  name: TestLegsItem1
+  icon: {fileID: 21300252, guid: 95d22684aba5646d79a26b3287a692b6, type: 3}
+  type: legs
+  stackable: 0
+  quantity: 1
+  prefab: {fileID: 9140581687860041051, guid: 3e8c3e30963b3c94ea7e9822892fc8de, type: 3}
+  attack: 0
+  defence: 3
+  speed: 3
+  dexterity: 1

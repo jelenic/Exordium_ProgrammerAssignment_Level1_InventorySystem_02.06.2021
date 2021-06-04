@@ -7,6 +7,7 @@ public class InventorySlot : MonoBehaviour
     public Image icon;
     public Button removeButton;
     private GameObject player;
+    public Text quantityText;
 
     private void Start()
     {
@@ -22,6 +23,13 @@ public class InventorySlot : MonoBehaviour
         icon.enabled = true;
         removeButton.interactable = true;
 
+        if (newItem.stackable)
+        {
+            quantityText.enabled = true;
+            quantityText.text = newItem.quantity.ToString();
+            //Increase();
+        }
+
     }
 
     public void ClearSlot()
@@ -31,6 +39,19 @@ public class InventorySlot : MonoBehaviour
         icon.sprite = null;
         icon.enabled = false;
         removeButton.interactable = false;
+        quantityText.enabled = false;
+    }
+
+    public void Increase()
+    {
+        item.quantity += 1;
+        quantityText.text = (int.Parse(quantityText.text) + 1).ToString();
+    }
+
+    public void Decrease()
+    {
+        item.quantity -= 1;
+        quantityText.text = (int.Parse(quantityText.text) - 1).ToString();
     }
 
     public void OnRemoveButton()

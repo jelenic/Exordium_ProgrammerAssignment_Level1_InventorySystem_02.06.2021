@@ -8,6 +8,9 @@ public class Item : ScriptableObject
     new public string name = "New Item";
     public Sprite icon = null;
     public string type = null;
+    public bool stackable = false;
+    public int quantity = 1;
+    public int maxQuantity = 5;
 
     //public enum type { head, chest, legs, weapon}
 

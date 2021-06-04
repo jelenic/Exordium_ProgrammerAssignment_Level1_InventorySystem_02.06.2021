@@ -44,7 +44,7 @@ public class Interactable : MonoBehaviour
     private void OnDrawGizmos()
     {
         //Gizmos.color = Color.yellow;
-        UnityEditor.Handles.color = Color.yellow;
-        UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.back, radius);
+        //UnityEditor.Handles.color = Color.yellow;
+        //UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.back, radius);
     }
 }
