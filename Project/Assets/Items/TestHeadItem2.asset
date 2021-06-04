@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ab69d50daa85054f9d20e0b0776756f, type: 3}
+  m_Name: TestHeadItem2
+  m_EditorClassIdentifier: 
+  name: TestHeadItem2
+  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  type: head
+  prefab: {fileID: 6428347094679360043, guid: 6f60855a68e0f8943bb84d68a7b5fc4c, type: 3}
+  attack: 4
+  defence: 1
+  speed: 0
+  dexterity: 0

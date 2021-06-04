@@ -7,6 +7,7 @@ public class PlayerInventory : MonoBehaviour
 {
 
     public List<Interactable> listOfInteractables;
+    public GameObject interactPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,14 @@ public class PlayerInventory : MonoBehaviour
             {
                 listOfInteractables.First().setInteracted();
             }
+        }
+        if (listOfInteractables.Any())
+        {
+            interactPanel.SetActive(true);
+        }
+        else
+        {
+            interactPanel.SetActive(false);
         }
     }
 

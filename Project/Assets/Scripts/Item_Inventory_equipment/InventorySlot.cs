@@ -16,6 +16,7 @@ public class InventorySlot : MonoBehaviour
 
     public void AddItem(Item newItem)
     {
+        //Debug.Log("InventorySlot AddItem");
         item = newItem;
         icon.sprite = item.icon;
         icon.enabled = true;
@@ -25,6 +26,7 @@ public class InventorySlot : MonoBehaviour
 
     public void ClearSlot()
     {
+        //Debug.Log("InventorySlot ClearSlot");
         item = null;
         icon.sprite = null;
         icon.enabled = false;
@@ -35,5 +37,14 @@ public class InventorySlot : MonoBehaviour
     {
         Instantiate(item.prefab, player.transform.position, Quaternion.identity);
         Inventory.instance.Remove(item);
+    }
+
+    public void UseItem()
+    {
+        //Debug.Log("InventorySlot UseItem");
+        if (item != null)
+        {
+            item.Use();
+        }
     }
 }

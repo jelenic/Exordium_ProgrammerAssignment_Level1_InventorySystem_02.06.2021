@@ -10,6 +10,8 @@ public class InventoryUI : MonoBehaviour
     public GameObject inventoryUI;
     InventorySlot[] slots;
 
+    public GameObject btn;
+
     private void Start()
     {
         inventory = Inventory.instance;
@@ -23,6 +25,7 @@ public class InventoryUI : MonoBehaviour
         if (Input.GetKeyDown("i"))
         {
             inventoryUI.SetActive(!inventoryUI.activeSelf);
+            btn.SetActive(!btn.activeSelf);
         }
     }
 
